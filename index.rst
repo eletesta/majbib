@@ -10,5 +10,6 @@ Bibliography on Majority-based Logic Synthesis
    :maxdepth: 1
    :caption: Contents:
 
+   synthesis
    decomposition
    references
