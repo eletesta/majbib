@@ -18,6 +18,15 @@ initially proposed by D.A. Huffman.  They conjectured that the best way to
 represent the majority-7 function is by using 9 majority-3 gates, which was
 later improved and is now known to be 7 majority-7 gates.
 
+An extension of the method of Cohn and Lindaman
+-----------------------------------------------
+
+(Miyata, 1964) :cite:`Miyata64`
+
+The paper discusses the exact conditions for functions :math:`A`, :math:`B`,
+:math:`C`, and :math:`D`, which do not depend on variable :math:`x`, such that
+:math:`F = \langle x\langle \bar xAC\rangle\langle \bar x BD\rangle\rangle`.
+
 The minimization of schemes on a majority basis
 -----------------------------------------------
 

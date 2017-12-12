@@ -6,5 +6,4 @@ References
 
 .. warning::
 
-    The following references have not been described yet:
-    :cite:`Miyata64`, :cite:`Tohma64`
+    The following references have not been described yet: :cite:`Tohma64`
