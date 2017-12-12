@@ -10,5 +10,5 @@ Majority-logic synthesis
 (Horna, 1963) :cite:`Horna63`
 
 This note describes a simple example in which the synthesis method by Akers
-misses the minimum solution for a majority-3 function.  It mentions that the
-Miiller-Winder method can find the optimum.
+:cite:`Akers62` misses the minimum solution for a majority-3 function.  It
+mentions that the Miiller-Winder method :cite:`MW62` can find the optimum.
