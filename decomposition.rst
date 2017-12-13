@@ -4,6 +4,41 @@ Decomposition
 In this page, we lists work describing decomposition techniques using majority
 functions.
 
+Axiomatic majority-decision logic
+---------------------------------
+
+(Cohn, Lindaman, 1961) :cite:`CL61`
+
+The paper introduces an axiomatic system consisting of 10 axioms that use
+majority logic.  These 10 axioms contain, e.g., the variant :math:`\langle
+xyz\rangle = \langle yxz\rangle` of the commutativity rule, and the variant
+:math:`\langle xxy\rangle = x` of the majority rule.  From these 10 axioms,
+first 13 theorems are derived that are useful for logic optimization.  Among
+these 13 theorems, one finds inverter propagation and the associativity,
+complementary associativity, and distributivity rule.  Finally, the authors
+introduce what they call the *fundamental theorem of majority-decision logic*,
+which they argue to be the majority-equivalent to Boole's law of development or
+Shannon decomposition (*fundamental theorem of Boolean algebra* called in their
+paper).  Their fundamental theorem states that
+
+.. math::
+
+    f(x_1, x_2, x_3, \dots, x_n) &= \langle\langle x_1x_2f_{x_1\bar x_2}\rangle\langle \bar x_1\bar x_2f_{x_1\bar x_2}\rangle f_{x_1x_2}\rangle &\quad\text{(a)} \\
+                                 &= \langle\langle x_1\bar x_2f_{x_1x_2}\rangle\langle \bar x_1x_2f_{x_1x_2}\rangle f_{x_1\bar x_2}\rangle &\quad\text{(b)} \\
+                                 &= \langle\langle \bar x_1x_2f_{x_1x_2}\rangle\langle\bar x_2x_3f_{x_2x_3}\rangle\langle\bar x_3x_1f_{x_3x_1}\rangle\rangle & \quad\text{(c)} \\
+                                 &= \langle\langle x_1x_2f_{x_1\bar x_2}\rangle\langle \bar x_1x_2f_{x_1x_2}\rangle \bar x_2\rangle, & \quad\text{(d)}
+
+where
+
+.. math::
+
+    f_{x_1x_2} &= f(x_1, x_1, x_3, \dots, x_n), \\
+    f_{x_1\bar x_2} &= f(x_1, \bar x_1, x_3, \dots, x_n), \\
+    f_{x_2x_3} &= f(x_1, x_2, x_2, \dots, x_n), \\
+    f_{x_3x_1} &= f(x_3, x_2, x_3, \dots, x_n).
+
+The theorem comes in four identities, called (a), (b), (c), and (d).
+
 Majority gate networks
 ----------------------
 

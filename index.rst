@@ -13,3 +13,9 @@ Bibliography on Majority-based Logic Synthesis
    synthesis
    decomposition
    references
+
+This page contains an annotated bibliography for majority-based logic synthesis.
+This project is supported by the `Swiss National Science Foundation
+<http://www.snf.ch>`_ through the project MAJesty_ (200021-169084).
+
+.. _MAJesty: http://p3.snf.ch/Project-169084
