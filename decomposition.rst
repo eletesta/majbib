@@ -4,6 +4,21 @@ Decomposition
 In this page, we lists work describing decomposition techniques using majority
 functions.
 
+A theorem for deriving majority-logic networks within an augmented Boolean algebra
+----------------------------------------------------------------------------------
+
+(Lindaman, 1960) :cite:`Lindaman60`
+
+In this paper, Lindaman introduces a theorem to iteratively derive majority
+expressions from arbitrary Boolean functions.  After representing a Boolean
+function :math:`f` in the form :math:`x\bigvee_{i=1}^{k-1}f_i \lor \bar
+x\bigwedge_{i=k}^{2k-2}f_i` for some functions :math:`f_i` that do not depend on
+:math:`x`, then one can write :math:`f` as :math:`m_k(x, (xf_1 \lor \bar xf_k),
+\dots, (x f_{n-1} \lor \bar xf_{2k-2}))`, where :math:`m_k(g_1, \dots, g_k) =
+\langle g_1m_{n-1}(g_1, \dots, g_{k-1}) g_k\rangle` and :math:`m_3(g_1, g_2,
+g_3) = \langle g_1g_2g_3\rangle`.  The paper proofs the theorem and shows its
+application to four examples.
+
 Axiomatic majority-decision logic
 ---------------------------------
 
